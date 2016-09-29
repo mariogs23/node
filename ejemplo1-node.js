@@ -1,7 +1,7 @@
 
 //1-Usar métodos síncronos y asíncronos para 
 //leer archivos
-
+/*
 var fs=require("fs");
 console.log("Comienza la ejecución");
 
@@ -16,7 +16,7 @@ console.log("lectura síncrona");
 var contenido=fs.readFileSync("sample.txt");//,function(error,data){
 console.log("contenidos del archivo: "+contenido);
 console.log("archivo leído");
-
+*/
 
 //leer fichero de configuracion
 /*
@@ -40,9 +40,9 @@ console.log("Inicio");
 fs.writeFileSync("nuevo.txt","Hola mundo sinc");
 console.log("fin");
 */
-
-//el método asíncrono se suele usar para escribir logs
 /*
+//el método asíncrono se suele usar para escribir logs
+var fs=require("fs");
 fs.writeFile("nuevoAsinc.txt","Hola mundo asinc",function(error){
 	console.log("terminé de escribir el archivo asinc");
 });
@@ -50,7 +50,7 @@ console.log("escribiendo el archivo");
 */
 
 //watch archivos
-/*
+
 var fs=require("fs");
 console.log("inicio");
 var config=JSON.parse(fs.readFileSync("config.json"));
@@ -60,4 +60,4 @@ fs.watchFile("config.json",function(current,previous){
 	config=JSON.parse(fs.readFileSync("config.json"));
 	console.log("nuevo archivo",config);
 })
-*/
+
