@@ -61,3 +61,4 @@ fs.watchFile("config.json",function(current,previous){
 	console.log("nuevo archivo",config);
 })
 
+
