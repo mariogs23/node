@@ -14,8 +14,8 @@ var server=http.createServer(function(request,response){
 server.listen(port,host,function(){
 	console.log("Escuchando "+host+":"+port)
 });
-*/
 
+*/
 // Ejemplo 2
 //Para este ejemplo hay que crear un directorio public (/node/public)
 //e introducir en ese directorio un archivo html
@@ -48,7 +48,7 @@ server.listen(port,host,function(){
 //Ejemplo 3
 //Leemos la configuración (host y puerto) desde el archivo json (config.json)
 //prueba modificar la configuracion
-/*
+
 var http=require("http");
 var fs=require("fs");
 console.log("Inicio");
@@ -80,4 +80,3 @@ fs.watchFile("config.json",function(){
 		console.log("Escuchando "+config.host+":"+config.port)
 	});
 })
-*/
